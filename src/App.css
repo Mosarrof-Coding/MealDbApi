@@ -8,15 +8,96 @@
 }
 .container {
   max-width: 1320px;
-  padding: 0 10px;
+  padding: 0 15px;
   margin: auto;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 /* ==heaaader==  */
 header {
   background-color: yellowgreen;
+  padding: 20px 0;
 }
 .headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.headerUl {
+  gap: 30px;
+}
+/* ===== hero ==== */
+#home {
+  background-color: #c9ecf3;
+  padding: 60px 0;
+}
+.heroTitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+.heroTitle h1 {
+  font-size: 36px;
+}
+.inputGroup {
+  min-width: 320px;
+  max-width: 680px;
+  margin: auto;
+  padding-top: 40px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.inputGroup input[type="text"] {
+  min-width: 320px;
+  width: 80%;
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.inputGroup input[type="submit"] {
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: yellowgreen;
+}
+.allFoods {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.foodItem {
+  max-width: 300px;
+  padding: 6px;
+  background-color: #fff;
+}
+.foodItem h5 {
+  color: sienna;
+  padding-bottom: 10px;
+}
+.mealDetails {
+  margin: 20px 0;
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.587);
+  font-weight: 400;
+}
+.mealDetails:hover {
+  color: rgb(0, 0, 255);
 }

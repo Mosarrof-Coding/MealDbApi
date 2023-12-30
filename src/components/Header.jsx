@@ -1,3 +1,5 @@
+import React from "react";
+
 function Header() {
   return (
     <header>
@@ -7,9 +9,10 @@ function Header() {
             <img src="../images/logo.png" alt="logo" />
           </div>
           <nav>
-            <ul>
+            <ul className="headerUl">
               <li>Home</li>
               <li>MealCard</li>
+              <li>Details</li>
             </ul>
           </nav>
         </div>
