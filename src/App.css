@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+/* google phont Oxsnium  */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ==heaaader==  */
+header {
+  background-color: yellowgreen;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerWrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
