@@ -1,5 +1,5 @@
 /* google phont Oxsnium  */
-/* @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,6 @@ header {
   padding: 8px 24px 6px;
   font-size: 18px;
   font-weight: 400;
-  text-transform: capitalize;
 }
 .inputGroup input[type="button"] {
   padding: 8px 24px 6px;

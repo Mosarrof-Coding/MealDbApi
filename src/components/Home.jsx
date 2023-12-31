@@ -23,7 +23,7 @@ function Home() {
             <div className="inputGroup">
               <input
                 type="text"
-                placeholder="e.g Arabian"
+                placeholder="e.g Beef"
                 onChange={(e) => setSearch(e.target.value)}
               />
               <input
