@@ -1,10 +1,11 @@
 /* google phont Oxsnium  */
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;500;600;700;800&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Oxanium", sans-serif;
+  line-height: 1.5;
 }
 .container {
   max-width: 1320px;
@@ -63,16 +64,18 @@ header {
 .inputGroup input[type="text"] {
   min-width: 320px;
   width: 80%;
-  padding: 8px 24px;
+  padding: 8px 24px 6px;
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
 }
-.inputGroup input[type="submit"] {
-  padding: 8px 24px;
+.inputGroup input[type="button"] {
+  padding: 8px 24px 6px;
   font-size: 18px;
   font-weight: 500;
   color: yellowgreen;
+  cursor: pointer;
+  line-height: 0;
 }
 .allFoods {
   padding: 10px;

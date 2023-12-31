@@ -1,3 +1,4 @@
+import logo from "../images/logo.png";
 import React from "react";
 
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
       <div className="container">
         <div className="headerWrapper">
           <div className="logo">
-            <img src="../images/logo.png" alt="logo" />
+            <img src={logo} alt="" />
           </div>
           <nav>
             <ul className="headerUl">
