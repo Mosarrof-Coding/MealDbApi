@@ -18,11 +18,11 @@ function Details() {
     detailPage();
   });
   return (
-    <div>
+    <section id="fail">
       <div className="container">
         <h2>{params.id}</h2>
       </div>
-    </div>
+    </section>
   );
 }
 export default Details;

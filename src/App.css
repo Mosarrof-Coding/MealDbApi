@@ -128,6 +128,10 @@ header {
   min-width: 320px;
   max-width: 400px;
 }
+#fail {
+  height: 100vh;
+  background-color: #5d1111;
+}
 /* ==== footer ===== */
 #footer {
   padding: 20px 0;
