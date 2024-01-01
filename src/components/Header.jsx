@@ -1,5 +1,5 @@
 import logo from "../images/logo.png";
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -7,13 +7,13 @@ function Header() {
       <div className="container">
         <div className="headerWrapper">
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
           </div>
           <nav>
             <ul className="headerUl">
-              <li>Home</li>
-              <li>MealCard</li>
-              <li>Details</li>
+              <Link to="/home">Home</Link>
+              <Link to="/meals">Meals</Link>
+              <Link to="/detail">Details</Link>
             </ul>
           </nav>
         </div>

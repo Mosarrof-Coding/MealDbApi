@@ -1,17 +1,26 @@
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+
+const uel = `https://themealdb.com/api/json/v1/1/search.php?s=`;
+
 function Details() {
-  const UrlName = `https://themealdb.com/api/json/v1/1/search.php?s=Arrabiata`;
+  const params = useParams();
+  console.log(params.id);
+  //   const [details, setDetails] = useState([]);
 
-  function fetchName() {
-    fetch(UrlName)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }
-  fetchName();
+  const detailPage = async () => {
+    const res = await fetch(uel);
+    const data = res.json();
+    console.log(data);
+  };
 
+  useEffect(() => {
+    detailPage();
+  });
   return (
     <div>
-      <div className="detailsWrapper">
-        <div className="detailItem">details</div>
+      <div className="container">
+        <h2>{params.id}</h2>
       </div>
     </div>
   );

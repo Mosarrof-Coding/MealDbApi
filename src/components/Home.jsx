@@ -1,13 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 function Home() {
   const [meals, setMeals] = useState([]);
   const [search, setSearch] = useState("");
-  const fetchMeal = () => {
-    const URL = `https://themealdb.com/api/json/v1/1/search.php?s=${search}`;
-    fetch(URL)
-      .then((res) => res.json())
-      .then((meal) => setMeals(meal.meals));
+
+  const URL = `https://themealdb.com/api/json/v1/1/search.php?s=${search}`;
+  const fetchMeal = async () => {
+    const res = await fetch(URL);
+    const meals = await res.json();
+    setMeals(meals.meals);
   };
 
   useEffect(() => {
@@ -38,13 +40,15 @@ function Home() {
           <div className="allFoods">
             {meals.map((meal) => (
               <div className="foodItem" key={meal.idMeal}>
-                <h4>{meal.idMeal}</h4>
                 <div>
                   <img src={meal.strMealThumb} alt={meal.strMeal} />
                 </div>
                 <h2>{meal.strMeal.slice(0, 20)}</h2>
                 <h5>{meal.strCategory}</h5>
                 <p>{meal.strInstructions.slice(0, 100)}</p>
+                <div className="detailBtn">
+                  <Link>Details</Link>
+                </div>
               </div>
             ))}
           </div>
